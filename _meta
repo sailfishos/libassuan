@@ -1,0 +1,8 @@
+<package project="Mer:Trunk:Base" name="libassuan">
+  <title>GnuPG IPC library</title>
+  <description>This is the IPC library used by GnuPG 2, GPGME and a few other
+packages.
+
+</description>
+  <url>http://www.gnupg.org/</url>
+</package>
