@@ -64,8 +64,9 @@ rm -f %{buildroot}%{_infodir}/dir
 
 
 %check
+%if ! 0%{?qemu_user_space_build}
 make check
-
+%endif
 
 %post devel 
 [ -e %{_infodir}/assuan.info ] && /sbin/install-info %{_infodir}/assuan.info %{_infodir}/dir &>/dev/null || :
