@@ -69,11 +69,11 @@ make check
 %endif
 
 %post devel 
-[ -e %{_infodir}/assuan.info ] && /sbin/install-info %{_infodir}/assuan.info %{_infodir}/dir &>/dev/null || :
+[ -e %{_infodir}/assuan.info ] && /sbin/install-info %{_infodir}/assuan.info %{_infodir}/dir >/dev/null 2&>1 || :
 
 %postun devel 
 if [ $1 -eq 0 ]; then
-  [ -e %{_infodir}/assuan.info ] && /sbin/install-info --delete %{_infodir}/assuan.info %{_infodir}/dir &>/dev/null || :
+  [ -e %{_infodir}/assuan.info ] && /sbin/install-info --delete %{_infodir}/assuan.info %{_infodir}/dir >/dev/null 2&>1 || :
 fi
 
 
