@@ -1,3 +1,6 @@
+* Sat Jan 04 2025 Matti Lehtimäki <matti.lehtimaki@jolla.com> - 1.0.5-2
+- Add patch to fix missing include. JB#63045
+
 * Tue Aug 21 2012 Antti Alatarvas <antti.alatarvas@gmail.com> - 1.0.5
 - Fixes MER#41 : libassuan-devel has possible bashisms in it's RPM scriptlets
 
